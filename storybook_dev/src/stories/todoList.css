@@ -1,0 +1,153 @@
+.cmp-todolist {
+    width: 100%;
+    background: var(--color-background);
+    padding: clamp(16px, 4vw, 24px);
+    border-radius: clamp(8px, 2vw, 12px);
+}
+.cmp-todolist__inner .day-goal {
+    font-size: calc(var(--typo-size-body-1) / 16 * 1rem);
+    font-weight: var(--typo-weight-semibold);
+    margin-bottom: clamp(16px, 4vw, 20px);
+}
+.cmp-todolist__inner .day-goal-home {
+    margin-top: clamp(12px, 3vw, 16px);
+}
+.cmp-todolist__inner .no-todo {
+    font-size: calc(var(--typo-size-body-1) / 16 * 1rem);
+    font-weight: var(--typo-weight-semibold);
+    text-align: center;
+    margin-bottom: clamp(8px, 2vw, 12px);
+}
+.cmp-todolist__inner .todo-box {
+    margin-bottom: clamp(8px, 2vw, 12px);
+}
+.cmp-todolist__inner .todo-box__item:not(:last-child) {
+    margin-bottom: clamp(12px, 3vw, 16px);
+}
+.cmp-todolist__inner .todo-box__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cmp-todolist__inner .todo-box__item .list {
+    display: flex;
+    gap: clamp(8px, 2.5vw, 12px);
+    flex: 1;
+}
+.cmp-todolist__inner .todo-box__item .list .title {
+    max-width: clamp(260px, 70vw, 300px);
+    font-size: calc(var(--typo-size-body-1) / 16 * 1rem);
+    word-break: keep-all;
+}
+.cmp-todolist__inner .todo-box__item .list .title.done {
+    color: var(--color-gray-scale-300);
+}
+.cmp-todolist__inner .todo-box__item .list .title-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: calc(var(--typo-size-body-1) / 16 * 1rem);
+    color: var(--color-text);
+    padding: clamp(1px, 0.5vw, 2px) 0;
+    border-bottom: 1px solid var(--color-gray-scale-200);
+}
+.cmp-todolist__inner .todo-box__item .list .title-input::placeholder {
+    color: var(--color-gray-scale-300);
+}
+.cmp-todolist__inner .todo-box__item .list .title-input:focus {
+    border-bottom-color: var(--color-primary);
+}
+.cmp-todolist__inner .todo-box__item .more svg {
+    fill: var(--color-gray-scale-200);
+    cursor: pointer;
+}
+.cmp-todolist__inner .todo-box__item .actions {
+    display: flex;
+    align-items: center;
+}
+.cmp-todolist__inner .todo-box__item .actions .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(20px, 5vw, 24px);
+    height: clamp(20px, 5vw, 24px);
+    border-radius: clamp(3px, 1vw, 4px);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.cmp-todolist__inner .todo-box__item--adding .list {
+    align-items: center;
+}
+.cmp-todolist__inner button.add-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: clamp(38px, 6vw, 42px);
+    background: var(--color-gray-scale-500);
+    color: var(--color-gray-scale-white);
+    border-radius: clamp(8px, 2vw, 10px);
+    margin-bottom: clamp(12px, 3vw, 16px);
+}
+.cmp-todolist__inner button.add-todo .text-area {
+    display: flex;
+    align-items: center;
+    gap: clamp(2px, 1vw, 4px);
+    font-size: calc(var(--typo-size-body-3) / 16 * 1rem);
+    font-weight: var(--typo-weight-medium);
+}
+.cmp-todolist__inner button.add-todo .text-area svg {
+    fill: var(--color-gray-scale-white);
+}
+.cmp-todolist__inner button.add-todo:last-child {
+    margin-bottom: 0;
+}
+.cmp-todolist__inner .home-section {
+    border-top: clamp(1px, 0.3vw, 1.5px) solid var(--color-gray-scale-100);
+}
+.cmp-todolist__inner .more-option {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: flex-end;
+}
+.cmp-todolist__inner .more-option__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.cmp-todolist__inner .more-option__container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: clamp(24px, 6vw, 32px) clamp(16px, 5vw, 20px) clamp(12px, 4vw, 16px);
+    background-color: #fff;
+    border-radius: clamp(8px, 2vw, 10px) clamp(8px, 2vw, 10px) 0 0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+.cmp-todolist__inner .more-option__container .more-title {
+    margin-bottom: clamp(12px, 3vw, 16px);
+    font-size: calc(var(--typo-size-body-1) / 16 * 1rem);
+    font-weight: var(--typo-weight-semibold);
+}
+.cmp-todolist__inner .more-option__container .more-sub {
+    color: var(--color-gray-scale-600);
+    font-size: calc(var(--typo-size-body-3) / 16 * 1rem);
+    padding: clamp(8px, 2.5vw, 12px) 0;
+    cursor: pointer;
+}
+.cmp-todolist__inner .more-option__container .more-sub:not(:last-child) {
+    border-bottom: clamp(1px, 0.3vw, 1.5px) solid var(--color-gray-scale-100);
+}
