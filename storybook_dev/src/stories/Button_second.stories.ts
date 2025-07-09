@@ -28,13 +28,26 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    type: 'default',
+    type: 'primary',
     buttonName: 'Primary Button',
     // onClick: () => {},
     aria: '',
     disabled: false,
-    bgColor: '#F05A39',
-    textColor: '#fff'
+    // bgColor: '#F05A39',
+    // textColor: '#fff'
+  },
+};
+
+
+export const Secondary: Story = {
+  args: {
+    type: 'secondary',
+    buttonName: 'Primary Button',
+    // onClick: () => {},
+    aria: '',
+    disabled: false,
+    // bgColor: '#F05A39',
+    // textColor: '#fff'
   },
 };
 
@@ -46,7 +59,7 @@ export const Close: Story = {
     // onClick: () => {},
     aria: '',
     disabled: false,
-    bgColor: '#f1f1f1',
-    textColor: '#000'
+    // bgColor: '#f1f1f1',
+    // textColor: '#000'
   },
 };
