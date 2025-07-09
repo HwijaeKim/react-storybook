@@ -7,8 +7,8 @@
     height: clamp(33px, 4vw, 40px);
     background-color: #1a2933;
     color: #fff;
-    font-size: calc(var(--typo-size-body-5) / 16 * 1rem);
-    font-weight: var(--typo-weight-semibold);
+    font-size: calc(12 / 16 * 1rem);
+    font-weight: 600;
     padding: clamp(8px, 2vw, 12px) clamp(16px, 5vw, 20px);
 }
 .btn.btn-default:active {
@@ -21,10 +21,10 @@
 .btn.btn-primary {
     width: 100%;
     height: clamp(46px, 6vw, 52px);
-    background-color: var(--color-primary);
+    background-color:#F05A39;
     color: #fff;
-    font-size: calc(var(--typo-size-btn-1) / 16 * 1rem);
-    font-weight: var(--typo-weight-bold);
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: 700;
     padding: clamp(12px, 3vw, 16px) clamp(16px, 5vw, 20px);
 }
 .btn.btn-primary:disabled {
@@ -34,10 +34,10 @@
 .btn.btn-secondary {
     width: 100%;
     height: clamp(40px, 5.5vw, 46px);
-    background-color: var(--color-primary);
+    background-color:#F05A39;
     color: #fff;
-    font-size: calc(var(--typo-size-btn-1) / 16 * 1rem);
-    font-weight: var(--typo-weight-bold);
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: 700;
     padding: clamp(12px, 3vw, 16px) clamp(16px, 5vw, 20px);
 }
 .btn.btn-secondary:disabled {
@@ -47,10 +47,10 @@
 .btn.btn-close {
     width: 100%;
     height: clamp(40px, 5.5vw, 46px);
-    background-color: var(--color-gray-scale-50);
+    background-color: #F1F1F1;
     color: #000;
-    font-size: calc(var(--typo-size-btn-1) / 16 * 1rem);
-    font-weight: var(--typo-weight-bold);
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: 700;
     padding: clamp(12px, 3vw, 16px) clamp(16px, 5vw, 20px);
 }
 .btn.btn-close:disabled {

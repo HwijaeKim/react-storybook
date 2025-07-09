@@ -30,19 +30,23 @@ export const Primary: Story = {
   args: {
     type: 'default',
     buttonName: 'Primary Button',
-    // onClick: '',
+    // onClick: () => {},
     aria: '',
     disabled: false,
+    bgColor: '#F05A39',
+    textColor: '#fff'
   },
 };
 
 
 export const Close: Story = {
   args: {
-    type: 'close',
-    buttonName: 'Close Button',
-    // onClick: '',
+    type: 'default',
+    buttonName: 'Primary Button',
+    // onClick: () => {},
     aria: '',
     disabled: false,
+    bgColor: '#f1f1f1',
+    textColor: '#000'
   },
 };
