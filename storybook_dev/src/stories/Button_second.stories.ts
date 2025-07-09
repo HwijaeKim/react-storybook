@@ -54,7 +54,7 @@ export const Secondary: Story = {
 
 export const Close: Story = {
   args: {
-    type: 'default',
+    type: 'close',
     buttonName: 'Primary Button',
     // onClick: () => {},
     aria: '',
