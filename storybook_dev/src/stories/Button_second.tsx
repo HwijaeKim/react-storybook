@@ -1,5 +1,5 @@
 import React from "react";
-import './button_second.css';
+import './button_second.scss';
 
 interface Button2Props {
     type?: "default" | "primary" | "secondary" | "close";
